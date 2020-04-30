@@ -1,5 +1,5 @@
 {
-    "name": "techneved/admin-login",
+    "name": "techneved/admin-roles",
     "description": "Laravel admin login with roles and permissions",
     "type": "library",
     "keywords": [
