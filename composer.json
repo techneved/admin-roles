@@ -1,0 +1,48 @@
+{
+    "name": "techneved/admin-login",
+    "description": "Laravel admin login with roles and permissions",
+    "type": "library",
+    "keywords": [
+        "laravel admin login",
+        "multiauth",
+        "admin auth",
+        "multi auth",
+        "laravel permissions",
+        "laravel roles permissions",
+        "laravel acl"
+      ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Manpreet Singh",
+            "email": "itmanpreet94@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "^5.2",
+        "tymon/jwt-auth": "^1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Techneved\\Admin\\Login\\" : "src/"
+        }
+        
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Techneved\\Admin\\Login\\Tests\\" : "tests/"
+        },
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Techneved\\Admin\\Login\\AdminLoginServiceProvider"
+            ]
+        }
+    }
+}
