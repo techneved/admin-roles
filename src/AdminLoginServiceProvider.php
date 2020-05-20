@@ -30,6 +30,7 @@ class AdminLoginServiceProvider extends ServiceProvider
     {
      
         $this->registerMigrations();
+        $this->registerFactories();
         $this->registerRoutes();
     }
 
@@ -64,6 +65,16 @@ class AdminLoginServiceProvider extends ServiceProvider
     public function registerMigrations()
     {
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+    }
+
+     /**
+     * Register factories
+     * 
+     * @return void
+     */
+    public function registerFactories()
+    {
+        $this->loadFactoriesFrom(__DIR__.'/../database/factories');
     }
 
     /**
